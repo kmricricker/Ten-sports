@@ -41,12 +41,6 @@
   <div id="video"></div>
 
   <script type="text/javascript">
-    // Function to get video URL from the domain
-    function getVideoUrlFromDomain() {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get('url');
-    }
-
     jwplayer("video").setup({
       image: "https://i.postimg.cc/9XGtny3q/IMG-20250221-222251-004.jpg",
       width: "100%",
@@ -55,7 +49,7 @@
       primary: "html5",
       preload: "auto",
       mute: false,
-      file: getVideoUrlFromDomain()
+      file: "https://c3s9.vfruitfairy.com/com3/index.m3u8" /* Updated video link */
     });
   </script>
 
